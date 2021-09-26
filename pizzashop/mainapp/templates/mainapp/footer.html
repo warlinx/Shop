@@ -1,12 +1,32 @@
 <div>
-    <h5>
-        Время работы: ежедневно, с 6 до 22
-    </h5>
-     <center>
-   {% include 'mainapp/messegers.html' %}
-     </center>
-    <h5 >
-        Тел.: 8-800-ххх-хх-хх
-    </h5>
+    <style>
+        parent {
+            display: flex;
+            flex-direction: row;
 
+        }
+
+        child {
+
+        }
+
+
+    </style>
+    <parent>
+         <child>
+            <text>
+            Время работы: ежедневно, с 6 до 22
+             </text>
+            </child>
+    <child>
+            {% include 'mainapp/messegers.html' %}
+    </child>
+
+     <child>
+    <text>
+        Тел.: 8-800-ххх-хх-хх
+    </text>
+    </child>
+
+</parent>
 </div>
